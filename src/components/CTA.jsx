@@ -1,9 +1,16 @@
 import React from 'react';
+import { motion } from "framer-motion";
 
 const CTA = () => {
   return (
     <section className="py-24 px-margin-mobile">
-      <div className="max-w-7xl mx-auto bg-primary rounded-xl p-xl md:p-24 text-center relative overflow-hidden">
+      <motion.div 
+        initial={{ opacity: 0, scale: 0.95 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        viewport={{ once: true, margin: "-100px" }}
+        transition={{ duration: 0.8 }}
+        className="max-w-7xl mx-auto bg-primary rounded-xl p-xl md:p-24 text-center relative overflow-hidden"
+      >
         <div className="absolute top-0 right-0 p-xl opacity-10">
           <span
             className="material-symbols-outlined text-[300px]"
@@ -25,7 +32,7 @@ const CTA = () => {
             Download APK Now
           </button>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };
