@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="flex flex-col gap-sm items-center md:items-start">
           <div className="flex items-center gap-sm">
             <img
-              src="https://res.cloudinary.com/dxatb3m2q/image/upload/v1778164957/icon-app-ui_eazptd.png"
+              src="https://res.cloudinary.com/dxatb3m2q/image/upload/q_auto,f_auto/v1778164957/icon-app-ui_eazptd.png"
               alt="Logo"
               className="w-8 h-8"
             />
