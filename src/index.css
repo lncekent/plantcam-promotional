@@ -15,9 +15,13 @@
     line-height: 1;
   }
   
-  body {
+  html {
     font-family: "Inter", sans-serif;
     scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: "Inter", sans-serif;
   }
 }
 

@@ -1,10 +1,10 @@
-import React from 'react';
+import React from "react";
 import { motion } from "framer-motion";
 
 const CTA = () => {
   return (
     <section className="py-24 px-margin-mobile">
-      <motion.div 
+      <motion.div
         initial={{ opacity: 0, scale: 0.95 }}
         whileInView={{ opacity: 1, scale: 1 }}
         viewport={{ once: true, margin: "-100px" }}
@@ -23,14 +23,18 @@ const CTA = () => {
           Ready to save your garden?
         </h2>
         <p className="font-body-lg text-body-lg text-on-primary opacity-80 mb-xl max-w-xl mx-auto relative z-10">
-          Join thousands of gardeners who trust PlantCam for
-          professional-grade plant pathology insights.
+          Join thousands of gardeners who trust PlantCam for professional-grade
+          plant pathology insights.
         </p>
         <div className="flex flex-col sm:flex-row gap-md justify-center relative z-10">
-          <button className="bg-on-primary text-primary px-xl py-md rounded-full font-label-lg text-label-lg flex items-center justify-center gap-sm hover:bg-white transition-all active:scale-95">
+          <a
+            href="/PlantCam.apk"
+            download="PlantCam.apk"
+            className="bg-on-primary text-primary px-xl py-md rounded-full font-label-lg text-label-lg flex items-center justify-center gap-sm hover:bg-white transition-all active:scale-95"
+          >
             <span className="material-symbols-outlined">download</span>
             Download APK Now
-          </button>
+          </a>
         </div>
       </motion.div>
     </section>

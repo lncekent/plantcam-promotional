@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const Footer = () => {
   return (
@@ -6,12 +6,11 @@ const Footer = () => {
       <div className="flex flex-col md:flex-row justify-between items-center gap-lg px-margin-mobile md:px-xl py-xl max-w-7xl mx-auto">
         <div className="flex flex-col gap-sm items-center md:items-start">
           <div className="flex items-center gap-sm">
-            <span
-              className="material-symbols-outlined text-primary text-2xl"
-              style={{ fontVariationSettings: '"FILL" 1' }}
-            >
-              eco
-            </span>
+            <img
+              src="https://res.cloudinary.com/dxatb3m2q/image/upload/v1778164957/icon-app-ui_eazptd.png"
+              alt="Logo"
+              className="w-8 h-8"
+            />
             <span className="font-title-lg text-title-lg text-on-surface">
               PlantCam
             </span>

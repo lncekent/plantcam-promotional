@@ -8,7 +8,7 @@ const Features = () => {
       id="features"
     >
       <div className="max-w-7xl mx-auto">
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
@@ -23,7 +23,7 @@ const Features = () => {
             garden covered.
           </p>
         </motion.div>
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true, margin: "-100px" }}
@@ -31,7 +31,7 @@ const Features = () => {
           className="grid grid-cols-1 md:grid-cols-12 gap-gutter-bento auto-rows-[240px]"
         >
           {/* Card 1: Instant AI Diagnosis */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
@@ -63,7 +63,7 @@ const Features = () => {
             </div>
           </motion.div>
           {/* Card 2: Scan History */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
@@ -79,7 +79,7 @@ const Features = () => {
             </p>
           </motion.div>
           {/* Card 3: Daily Botanical */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.4 }}
