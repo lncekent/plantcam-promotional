@@ -34,6 +34,7 @@ const Features = () => {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
             transition={{ duration: 0.5 }}
             className="md:col-span-8 md:row-span-2 bg-white rounded-lg botanical-shadow p-xl flex flex-col justify-between overflow-hidden relative"
           >
@@ -66,6 +67,7 @@ const Features = () => {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2 }}
             className="md:col-span-4 md:row-span-1 bg-white rounded-lg botanical-shadow p-xl flex flex-col"
           >
@@ -82,6 +84,7 @@ const Features = () => {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.4 }}
             className="md:col-span-4 md:row-span-1 bg-primary text-on-primary rounded-lg botanical-shadow p-xl flex flex-col justify-between"
           >

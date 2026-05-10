@@ -48,7 +48,7 @@ const Hero = () => {
         <motion.div
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: false, amount: 0.3 }}
+          viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
           className="relative flex md:justify-end justify-center"
         >
@@ -62,8 +62,8 @@ const Hero = () => {
             {/* Floating Badge */}
             <motion.div
               initial={{ opacity: 0, scale: 0.8 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: false }}
+              whileInView={{ opacity: 1, scale: 1.1 }}
+              viewport={{ once: true }}
               transition={{ delay: 0.4, duration: 0.5, type: "spring" }}
               className="absolute -bottom-6 left-0 md:-left-12 lg:-left-16 bg-white botanical-shadow p-md rounded-lg flex items-center gap-md border border-surface-container z-20"
             >

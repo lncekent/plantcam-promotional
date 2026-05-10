@@ -66,7 +66,7 @@ const HowItWorks = () => {
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: false, margin: "-100px" }}
+            viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
             className="bg-surface-container rounded-lg p-xl relative overflow-hidden h-[500px]"
           >
