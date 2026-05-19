@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router";
+import { NavLink } from "react-router";
 const Footer = () => {
   return (
     <footer className="bg-surface-container-low border-t border-outline-variant/30">
@@ -23,24 +23,33 @@ const Footer = () => {
         </div>
         <div className="flex flex-col md:flex-row items-center gap-lg">
           <nav className="flex flex-col md:flex-row gap-lg items-center">
-            <Link to={"/privacy"}
-              className="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md"
-              href="#"
+
+            <NavLink to={"/"} className={({ isActive })=>
+              `hover:text-primary transition-colors font-body-md text-body-md ${isActive ? "text-primary underline" : "text-on-surface-variant"
+              }` 
+            }
+            >
+              Home
+            </NavLink>
+            <NavLink to={"/privacy"} className={({isActive}) =>
+            `hover:text-primary transition-colors font-body-md text-body-md ${isActive ? "text-primary underline":"text-on-surface-variant"}`  
+          }
             >
               Privacy Policy
-            </Link>
-            <Link to={"/terms"}
-              className="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md"
-              href="#"
+            </NavLink>
+            <NavLink to={"/terms"} className={({isActive}) =>
+          `hover:text-primary transition-colors font-body-md text-body-md ${isActive ? "text-primary underline" :"text-on-surface-variant"}`  
+            }
             >
               Terms of Service
-            </Link>
-            <Link to={"/disclaimer"}
-              className="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md"
-              href="#"
+            </NavLink>
+            <NavLink to={"/disclaimer"} 
+              className={({isActive}) =>
+              `text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md ${isActive ? "text-primary underline":"text-on-surface-variant"}`
+              }
             >
               Disclaimer
-            </Link>
+            </NavLink>
           </nav>
         </div>
       </div>

@@ -1,6 +1,10 @@
 import React from "react";
 import { Link } from "react-router";
+import { useState } from "react";
+
 const Header = () => {
+  const [activeSelection,setActiveSelection] = useState("");
+
   return (
     <header className="sticky top-0 w-full z-50 bg-surface/80 backdrop-blur-xl shadow-[0px_4px_20px_rgba(0,110,40,0.06)]">
       <div className="flex items-center justify-between px-margin-mobile md:px-xl py-md max-w-7xl mx-auto">
@@ -15,15 +19,21 @@ const Header = () => {
           </span>
         </Link>
         <nav className="hidden md:flex items-center gap-lg">
-          <a
-            className="text-on-surface-variant hover:text-primary transition-colors font-label-lg text-label-lg"
-            href="#features"
+          <a href="#features"
+          onClick={() =>setActiveSelection("features")}
+            className={`hover:text-primary transition-colors font-label-lg text-label-lg ${activeSelection ==="features"
+              ? "text-primary ":
+              "text-on-surface-variant"}`
+            }
           >
             Features
           </a>
-          <a
-            className="text-on-surface-variant hover:text-primary transition-colors font-label-lg text-label-lg"
-            href="#how-it-works"
+          <a href="#how-it-works"
+            className={` hover:text-primary transition-colors font-label-lg text-label-lg ${
+              activeSelection === "how-it-works" ?
+              "text-primary" : "text-on-surface-variant"
+            }`}
+            onClick={()=> setActiveSelection("how-it-works")}
           >
             How it Works
           </a>

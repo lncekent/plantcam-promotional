@@ -8,11 +8,13 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Terms from "./pages/Terms";
 import Disclaimer from "./pages/Disclaimer";
 import Footer from "./components/Footer";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <>
     <Router>
+      <ScrollToTop/>
       <Header/>
         <Routes>
           <Route path="/" element={<Home/>}></Route>
