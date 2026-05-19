@@ -8,12 +8,15 @@ import {
 } from "lucide-react";
 import disclaimerGreenhouse from "../assets/disclaimer-greenhouse.png";
 
+import { useEffect, useState } from "react";
+
 const specialtyTags = ["Solanum", "Capsicum"];
+
 
 const Disclaimer = () => {
   return (
     <main className="bg-surface px-margin-mobile py-xl md:px-xl md:py-[50px]">
-      <div className="mx-auto flex w-full max-w-[1120px] flex-col gap-xl">
+        <div className="mx-auto flex w-full max-w-[1120px] flex-col gap-xl">
         <section className="flex max-w-[672px] flex-col gap-md">
           <h1 className="font-display-lg text-display-lg text-primary">
             Medical &amp; Botanical Disclaimer
@@ -78,7 +81,7 @@ const Disclaimer = () => {
                 ))}
               </div>
             </div>
-            <Sprout className="absolute -bottom-8 -right-8 size-32 rotate-12 text-white/10" />
+            <Sprout data-no-skeleton className="absolute -bottom-8 -right-8 size-32 rotate-12 text-white/10" />
           </article>
 
           <article className="rounded-lg bg-surface-container-low p-xl shadow-[0px_4px_10px_rgba(0,110,40,0.06)] md:col-span-6">
@@ -139,7 +142,10 @@ const Disclaimer = () => {
           <BadgePercent className="absolute right-xl top-xl size-10 text-white/70" />
         </section>
       </div>
+
+
     </main>
+
   );
 };
 
