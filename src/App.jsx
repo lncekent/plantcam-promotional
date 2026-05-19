@@ -1,22 +1,27 @@
-import React from 'react';
-import Header from './components/Header';
-import Hero from './components/Hero';
-import Features from './components/Features';
-import HowItWorks from './components/HowItWorks';
-import CTA from './components/CTA';
-import Footer from './components/Footer';
+import React from "react";
+
+import Header from "./components/Header";
+
+import Home from './pages/Home'
+import Privacy from './pages/Privacy'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Terms from "./pages/Terms";
+import Disclaimer from "./pages/Disclaimer";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <>
-      <Header />
-      <main>
-        <Hero />
-        <Features />
-        <HowItWorks />
-        <CTA />
-      </main>
-      <Footer />
+    <Router>
+      <Header/>
+        <Routes>
+          <Route path="/" element={<Home/>}></Route>
+          <Route path="/privacy" element={<Privacy/>}></Route>
+          <Route path="/terms" element={<Terms/>}></Route>
+          <Route path="/disclaimer" element={<Disclaimer/>}></Route>
+        </Routes>
+      <Footer/>
+    </Router>
     </>
   );
 }

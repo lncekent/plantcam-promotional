@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router";
 const Footer = () => {
   return (
     <footer className="bg-surface-container-low border-t border-outline-variant/30">
@@ -15,31 +15,32 @@ const Footer = () => {
               PlantCam
             </span>
           </div>
+          
           <p className="font-body-md text-body-md text-on-surface-variant text-center md:text-left max-w-sm">
             © 2024 PlantCam AI. Dedicated to botanical health and scientific
             precision.
           </p>
         </div>
         <div className="flex flex-col md:flex-row items-center gap-lg">
-          <nav className="flex gap-lg">
-            <a
+          <nav className="flex flex-col md:flex-row gap-lg items-center">
+            <Link to={"/privacy"}
               className="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md"
               href="#"
             >
               Privacy Policy
-            </a>
-            <a
+            </Link>
+            <Link to={"/terms"}
               className="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md"
               href="#"
             >
               Terms of Service
-            </a>
-            <a
+            </Link>
+            <Link to={"/disclaimer"}
               className="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md"
               href="#"
             >
               Disclaimer
-            </a>
+            </Link>
           </nav>
         </div>
       </div>
