@@ -5,7 +5,6 @@ import {
   Download,
   ShieldCheck,
 } from "lucide-react";
-import privacySecurityImage from "../assets/privacy-security.png";
 
 const dataCollectionItems = [
   {
@@ -128,7 +127,7 @@ const Privacy = () => {
               <img
                 alt="Lush greenhouse plants illuminated by a window"
                 className="h-full w-full object-cover"
-                src={privacySecurityImage}
+                src="https://res.cloudinary.com/dxatb3m2q/image/upload/q_auto,f_auto/v1778241751/plant-roots_b25pcr.jpg"
               />
               <div className="absolute inset-0 bg-primary/10 backdrop-blur-[1px]" />
             </div>

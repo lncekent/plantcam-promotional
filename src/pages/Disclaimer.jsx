@@ -6,7 +6,7 @@ import {
   Microscope,
   Sprout,
 } from "lucide-react";
-import disclaimerGreenhouse from "../assets/disclaimer-greenhouse.png";
+
 
 import { useEffect, useState } from "react";
 
@@ -126,7 +126,7 @@ const Disclaimer = () => {
           <img
             alt="Scientific greenhouse with rows of healthy plants"
             className="h-full w-full object-cover object-center"
-            src={disclaimerGreenhouse}
+            src="https://res.cloudinary.com/dxatb3m2q/image/upload/q_auto,f_auto/v1779191952/disclaimer_wrxh2w.jpg"
           />
           <div className="absolute inset-0 flex items-end bg-gradient-to-t from-black/60 to-transparent p-xl">
             <div className="flex flex-col gap-xs text-white">

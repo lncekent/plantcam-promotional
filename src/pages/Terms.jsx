@@ -7,7 +7,6 @@ import {
   ShieldAlert,
   ShieldCheck,
 } from "lucide-react";
-import termsBotanicalStudy from "../assets/terms-botanical-study.png";
 
 const sections = [
   {
@@ -109,7 +108,7 @@ const Terms = () => {
           <img
             alt="Scientific botanical study of young green plant leaves"
             className="h-full w-full object-cover object-center opacity-80"
-            src={termsBotanicalStudy}
+            src="https://res.cloudinary.com/dxatb3m2q/image/upload/q_auto,f_auto/v1778241836/plant-dust_mydict.jpg"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-primary/0" />
           <div className="absolute bottom-lg left-lg flex items-center gap-sm rounded-full bg-white/85 px-md py-sm text-primary shadow-[0px_4px_10px_rgba(0,110,40,0.06)] backdrop-blur-sm">
