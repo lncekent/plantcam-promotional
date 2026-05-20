@@ -7,9 +7,6 @@ import {
   Sprout,
 } from "lucide-react";
 
-
-import { useEffect, useState } from "react";
-
 const specialtyTags = ["Solanum", "Capsicum"];
 
 

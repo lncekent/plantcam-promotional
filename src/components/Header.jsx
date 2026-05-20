@@ -1,9 +1,47 @@
-import React from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router";
-import { useState } from "react";
+
+const NAV_SECTIONS = ["features", "how-it-works"];
 
 const Header = () => {
-  const [activeSelection,setActiveSelection] = useState("");
+  const [activeSelection, setActiveSelection] = useState("");
+
+  useEffect(() => {
+    const updateActiveSection = () => {
+      const activationPoint = window.innerHeight * 0.4;
+
+      const currentSection = NAV_SECTIONS.find((sectionId) => {
+        const section = document.getElementById(sectionId);
+
+        if (!section) {
+          return false;
+        }
+
+        const sectionPosition = section.getBoundingClientRect();
+
+        return (
+          sectionPosition.top <= activationPoint &&
+          sectionPosition.bottom >= activationPoint
+        );
+      });
+
+      setActiveSelection(currentSection || "");
+    };
+
+    updateActiveSection();
+    window.addEventListener("scroll", updateActiveSection, { passive: true });
+    window.addEventListener("resize", updateActiveSection);
+
+    return () => {
+      window.removeEventListener("scroll", updateActiveSection);
+      window.removeEventListener("resize", updateActiveSection);
+    };
+  }, []);
+
+  const getNavLinkClass = (sectionId) =>
+    `hover:text-primary transition-colors font-label-lg text-label-lg ${
+      activeSelection === sectionId ? "text-primary" : "text-on-surface-variant"
+    }`;
 
   return (
     <header className="sticky top-0 w-full z-50 bg-surface/80 backdrop-blur-xl shadow-[0px_4px_20px_rgba(0,110,40,0.06)]">
@@ -19,21 +57,17 @@ const Header = () => {
           </span>
         </Link>
         <nav className="hidden md:flex items-center gap-lg">
-          <a href="#features"
-          onClick={() =>setActiveSelection("features")}
-            className={`hover:text-primary transition-colors font-label-lg text-label-lg ${activeSelection ==="features"
-              ? "text-primary ":
-              "text-on-surface-variant"}`
-            }
+          <a
+            href="#features"
+            onClick={() => setActiveSelection("features")}
+            className={getNavLinkClass("features")}
           >
             Features
           </a>
-          <a href="#how-it-works"
-            className={` hover:text-primary transition-colors font-label-lg text-label-lg ${
-              activeSelection === "how-it-works" ?
-              "text-primary" : "text-on-surface-variant"
-            }`}
-            onClick={()=> setActiveSelection("how-it-works")}
+          <a
+            href="#how-it-works"
+            className={getNavLinkClass("how-it-works")}
+            onClick={() => setActiveSelection("how-it-works")}
           >
             How it Works
           </a>
