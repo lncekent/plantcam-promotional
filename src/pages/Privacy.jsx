@@ -5,6 +5,7 @@ import {
   Download,
   ShieldCheck,
 } from "lucide-react";
+import { motion } from "framer-motion";
 
 const dataCollectionItems = [
   {
@@ -32,7 +33,13 @@ const Privacy = () => {
   return (
     <main className="bg-surface px-margin-mobile py-xl md:px-xl md:py-[50px]">
       <div className="mx-auto flex w-full max-w-[960px] flex-col gap-xl">
-        <section className="flex flex-col items-start gap-sm">
+        <motion.div
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+          viewport={{ once: true, amount: 0.3 }}
+          className="flex flex-col items-start gap-sm"
+        >
           <div className="inline-flex items-center gap-sm rounded-full bg-surface-container-high px-md py-xs text-primary">
             <ShieldCheck className="size-[14px]" strokeWidth={2.4} />
             <span className="font-label-sm text-label-sm uppercase">
@@ -48,10 +55,16 @@ const Privacy = () => {
               Last Updated: May 18, 2026
             </p>
           </div>
-        </section>
+        </motion.div>
 
         <section className="flex flex-col gap-xl">
-          <article className="rounded-lg bg-white p-xl shadow-[0px_4px_20px_rgba(0,110,40,0.06)]">
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            viewport={{ once: true, amount: 0.3 }}
+            className="rounded-lg bg-white p-xl shadow-[0px_4px_20px_rgba(0,110,40,0.06)]"
+          >
             <div className="flex flex-col gap-md md:flex-row md:items-start">
               <div className="flex size-12 shrink-0 items-center justify-center rounded-full bg-secondary-container text-primary">
                 <ShieldCheck className="size-5" strokeWidth={2.2} />
@@ -70,10 +83,16 @@ const Privacy = () => {
                 </p>
               </div>
             </div>
-          </article>
+          </motion.div>
 
           <div className="grid gap-gutter-bento md:grid-cols-2">
-            <article className="rounded-lg border-t-4 border-primary bg-white px-xl pb-[46px] pt-[36px] shadow-[0px_4px_20px_rgba(0,110,40,0.06)]">
+            <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.9, ease: "easeOut" }}
+              viewport={{ once: true, amount: 0.4 }}
+              className="rounded-lg border-t-4 border-primary bg-white px-xl pb-[46px] pt-[36px] shadow-[0px_4px_20px_rgba(0,110,40,0.06)]"
+            >
               <Camera className="mb-md size-5 text-primary" strokeWidth={2.2} />
 
               <h2 className="mb-md font-title-lg text-title-lg text-on-surface">
@@ -99,9 +118,15 @@ const Privacy = () => {
                   </li>
                 ))}
               </ul>
-            </article>
+            </motion.div>
 
-            <article className="rounded-lg border-t-4 border-secondary bg-white px-xl pb-xl pt-[36px] shadow-[0px_4px_20px_rgba(0,110,40,0.06)]">
+            <motion.div
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.9, ease: "easeOut" }}
+              viewport={{ once: true, amount: 0.3 }}
+              className="rounded-lg border-t-4 border-secondary bg-white px-xl pb-xl pt-[36px] shadow-[0px_4px_20px_rgba(0,110,40,0.06)]"
+            >
               <Brain className="mb-md size-5 text-primary" strokeWidth={2.2} />
 
               <h2 className="mb-md font-title-lg text-title-lg text-on-surface">
@@ -116,13 +141,20 @@ const Privacy = () => {
               <div className="rounded-[6px] bg-surface-container p-md">
                 <p className="font-label-lg text-label-lg leading-[18px] text-primary">
                   On-device processing ensures rapid response, while cloud
-                  analysis provides deep scientific insights into 5,000+ species.
+                  analysis provides deep scientific insights into 5,000+
+                  species.
                 </p>
               </div>
-            </article>
+            </motion.div>
           </div>
 
-          <article className="overflow-hidden rounded-lg bg-white shadow-[0px_4px_20px_rgba(0,110,40,0.06)] md:flex">
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, ease: "easeOut" }}
+            viewport={{ once: true, amount: 0.3 }}
+            className="overflow-hidden rounded-lg bg-white shadow-[0px_4px_20px_rgba(0,110,40,0.06)] md:flex"
+          >
             <div className="relative h-[260px] md:h-auto md:w-1/3 md:min-w-[300px]">
               <img
                 alt="Lush greenhouse plants illuminated by a window"
@@ -159,9 +191,15 @@ const Privacy = () => {
                 ))}
               </div>
             </div>
-          </article>
+          </motion.div>
 
-          <section className="rounded-lg bg-surface-container-low p-xl text-center">
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            viewport={{ once: true, amount: 0.3 }}
+            className="rounded-lg bg-surface-container-low p-xl text-center"
+          >
             <h2 className="font-headline-md text-headline-md text-on-surface">
               6. Updates
             </h2>
@@ -188,7 +226,7 @@ const Privacy = () => {
                 Download PDF
               </a>
             </div>
-          </section>
+          </motion.div>
         </section>
       </div>
     </main>

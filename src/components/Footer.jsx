@@ -14,37 +14,46 @@ const Footer = () => {
               PlantCam
             </span>
           </div>
-          
+
           <p className="font-body-md text-body-md text-on-surface-variant text-center md:text-left max-w-sm">
-            © 2024 PlantCam AI. Dedicated to botanical health and scientific
+            © 2026 PlantCam AI. Dedicated to botanical health and scientific
             precision.
           </p>
         </div>
         <div className="flex flex-col md:flex-row items-center gap-lg">
           <nav className="flex flex-col md:flex-row gap-lg items-center">
-
-            <NavLink to={"/"} className={({ isActive })=>
-              `hover:text-primary transition-colors font-body-md text-body-md ${isActive ? "text-primary underline" : "text-on-surface-variant"
-              }` 
-            }
+            <NavLink
+              to={"/"}
+              className={({ isActive }) =>
+                `hover:text-primary transition-colors font-body-md text-body-md ${
+                  isActive
+                    ? "text-primary underline"
+                    : "text-on-surface-variant"
+                }`
+              }
             >
               Home
             </NavLink>
-            <NavLink to={"/privacy"} className={({isActive}) =>
-            `hover:text-primary transition-colors font-body-md text-body-md ${isActive ? "text-primary underline":"text-on-surface-variant"}`  
-          }
+            <NavLink
+              to={"/privacy"}
+              className={({ isActive }) =>
+                `hover:text-primary transition-colors font-body-md text-body-md ${isActive ? "text-primary underline" : "text-on-surface-variant"}`
+              }
             >
               Privacy Policy
             </NavLink>
-            <NavLink to={"/terms"} className={({isActive}) =>
-          `hover:text-primary transition-colors font-body-md text-body-md ${isActive ? "text-primary underline" :"text-on-surface-variant"}`  
-            }
+            <NavLink
+              to={"/terms"}
+              className={({ isActive }) =>
+                `hover:text-primary transition-colors font-body-md text-body-md ${isActive ? "text-primary underline" : "text-on-surface-variant"}`
+              }
             >
               Terms of Service
             </NavLink>
-            <NavLink to={"/disclaimer"} 
-              className={({isActive}) =>
-              `text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md ${isActive ? "text-primary underline":"text-on-surface-variant"}`
+            <NavLink
+              to={"/disclaimer"}
+              className={({ isActive }) =>
+                `text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md ${isActive ? "text-primary underline" : "text-on-surface-variant"}`
               }
             >
               Disclaimer
