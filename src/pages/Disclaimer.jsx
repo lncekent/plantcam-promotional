@@ -6,15 +6,20 @@ import {
   Microscope,
   Sprout,
 } from "lucide-react";
-
+import { motion } from "framer-motion";
 const specialtyTags = ["Solanum", "Capsicum"];
-
 
 const Disclaimer = () => {
   return (
     <main className="bg-surface px-margin-mobile py-xl md:px-xl md:py-[50px]">
-        <div className="mx-auto flex w-full max-w-[1120px] flex-col gap-xl">
-        <section className="flex max-w-[672px] flex-col gap-md">
+      <div className="mx-auto flex w-full max-w-[1120px] flex-col gap-xl">
+        <motion.section
+          initial={{ opacity: 1, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+          viewport={{ once: true, amount: 0.3 }}
+          className="flex max-w-[672px] flex-col gap-md"
+        >
           <h1 className="font-display-lg text-display-lg text-primary">
             Medical &amp; Botanical Disclaimer
           </h1>
@@ -23,10 +28,16 @@ const Disclaimer = () => {
             AI. Please review our official stance on diagnostic accuracy and
             professional consultation.
           </p>
-        </section>
+        </motion.section>
 
         <section className="grid gap-gutter-bento md:grid-cols-12">
-          <article className="rounded-lg border border-surface-variant/50 bg-surface p-xl shadow-[0px_4px_20px_rgba(0,110,40,0.06)] md:col-span-8">
+          <motion.article
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            viewport={{ once: true, amount: 0.3 }}
+            className="rounded-lg border border-surface-variant/50 bg-surface p-xl shadow-[0px_4px_20px_rgba(0,110,40,0.06)] md:col-span-8"
+          >
             <div className="flex flex-col gap-md sm:flex-row sm:items-start">
               <Microscope
                 className="mt-xs size-8 shrink-0 text-primary"
@@ -43,17 +54,24 @@ const Disclaimer = () => {
             </div>
 
             <p className="mt-lg font-body-md text-body-md leading-[24px] text-on-surface-variant">
-              Our neural network has been trained on over 2 million botanical
-              datasets to provide rapid identification. While we maintain a high
+              Our neural network has been trained on over 18 thousands
+              solanaceous botanical datasets especially Potato, Tomato and
+              Pepper to provide rapid identification. While we maintain a high
               accuracy rate, all identifications are strictly for informational
               purposes. Botanical health can be influenced by micro-climates and
               subtle soil variations that visual AI may not immediately detect.
               These results should never replace professional agricultural
               advice or rigorous lab testing.
             </p>
-          </article>
+          </motion.article>
 
-          <article className="relative overflow-hidden rounded-lg bg-primary p-xl text-white shadow-[0px_4px_20px_rgba(0,110,40,0.06)] md:col-span-4">
+          <motion.article
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            viewport={{ once: true, amount: 0.3 }}
+            className="relative overflow-hidden rounded-lg bg-primary p-xl text-white shadow-[0px_4px_20px_rgba(0,110,40,0.06)] md:col-span-4"
+          >
             <div className="relative z-10 flex h-full flex-col justify-between gap-xl">
               <div className="flex flex-col gap-md">
                 <h2 className="font-headline-md text-headline-md">
@@ -78,10 +96,19 @@ const Disclaimer = () => {
                 ))}
               </div>
             </div>
-            <Sprout data-no-skeleton className="absolute -bottom-8 -right-8 size-32 rotate-12 text-white/10" />
-          </article>
+            <Sprout
+              data-no-skeleton
+              className="absolute -bottom-8 -right-8 size-32 rotate-12 text-white/10"
+            />
+          </motion.article>
 
-          <article className="rounded-lg bg-surface-container-low p-xl shadow-[0px_4px_10px_rgba(0,110,40,0.06)] md:col-span-6">
+          <motion.article
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1, ease: "easeOut" }}
+            viewport={{ once: true, amount: 0.3 }}
+            className="rounded-lg bg-surface-container-low p-xl shadow-[0px_4px_10px_rgba(0,110,40,0.06)] md:col-span-6"
+          >
             <div className="flex items-center gap-md">
               <div className="flex size-[34px] shrink-0 items-center justify-center rounded-full bg-white text-primary shadow-[0px_4px_10px_rgba(0,110,40,0.06)]">
                 <Leaf className="size-5" strokeWidth={2.2} />
@@ -98,9 +125,15 @@ const Disclaimer = () => {
               regarding the application of chemical interventions, pesticides,
               or large-scale irrigation adjustments.
             </p>
-          </article>
+          </motion.article>
 
-          <article className="rounded-lg border border-surface-variant bg-white p-xl shadow-[0px_4px_10px_rgba(0,110,40,0.06)] md:col-span-6">
+          <motion.article
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1, ease: "easeOut" }}
+            viewport={{ once: true, amount: 0.3 }}
+            className="rounded-lg border border-surface-variant bg-white p-xl shadow-[0px_4px_10px_rgba(0,110,40,0.06)] md:col-span-6"
+          >
             <div className="flex items-center gap-md">
               <Gavel className="size-8 shrink-0 text-primary" strokeWidth={2} />
               <h2 className="font-headline-md text-headline-md text-on-surface">
@@ -116,10 +149,16 @@ const Disclaimer = () => {
               acknowledge that you are the final decision-maker for your
               botanical assets.
             </p>
-          </article>
+          </motion.article>
         </section>
 
-        <section className="relative h-96 overflow-hidden rounded-xl">
+        <motion.section
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          viewport={{ once: true, amount: 0.3 }}
+          className="relative h-96 overflow-hidden rounded-xl"
+        >
           <img
             alt="Scientific greenhouse with rows of healthy plants"
             className="h-full w-full object-cover object-center"
@@ -137,12 +176,9 @@ const Disclaimer = () => {
             </div>
           </div>
           <BadgePercent className="absolute right-xl top-xl size-10 text-white/70" />
-        </section>
+        </motion.section>
       </div>
-
-
     </main>
-
   );
 };
 
