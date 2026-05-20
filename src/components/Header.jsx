@@ -57,20 +57,20 @@ const Header = () => {
           </span>
         </Link>
         <nav className="hidden md:flex items-center gap-lg">
-          <a
-            href="#features"
+          <Link
+            to={"/#features"}
             onClick={() => setActiveSelection("features")}
             className={getNavLinkClass("features")}
           >
             Features
-          </a>
-          <a
-            href="#how-it-works"
+          </Link>
+          <Link
+            to={"/#how-it-works"}
             className={getNavLinkClass("how-it-works")}
             onClick={() => setActiveSelection("how-it-works")}
           >
             How it Works
-          </a>
+          </Link>
         </nav>
         <a
           href="/PlantCam.apk"
