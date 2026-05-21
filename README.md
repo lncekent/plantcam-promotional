@@ -1,16 +1,20 @@
-# React + Vite
+# PlantCam Promotional Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project will be showcasing the plantcam application that I made using MIT App Inventor and Webviewer for frontend. PlantCam is a mobile-based application for plan disaease diagnosing, detection and smart recommendation using trained AI Model. By using Google Collab, trained AI with 18 thousands datasets for solanaceous plants(potato, tomato and pepper).
 
-Currently, two official plugins are available:
+## Features
+- Responsive promotional website
+- Home, Privacy, Terms of Service and Disclamer pages
+- APK download link
+- AI diagnosis feature explanation
+- Figma-based UI implementation
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Tech Stack
+- **Frontend:** HTML, CSS, Javascript, React, Tailwind CSS, Framer Motion, Lucide React, Vite
+- **Others:** MCP, Figma, 
 
-## React Compiler
+## Installation & Setup
+1. Clone the repository: `git clone [link]`
+2. Install dependencies: `npm install`
+3. Run the project: `npm start`
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
