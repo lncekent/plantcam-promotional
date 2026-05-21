@@ -28,7 +28,7 @@ This project will be showcasing the plantcam application that I made using MIT A
 6. **(Optional)** Building for Production: `npm run build`
 
 
-## Project Structure 📋
+📋 ## Project Structure
 
 ```text
 src/
