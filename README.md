@@ -27,8 +27,10 @@ This project will be showcasing the plantcam application that I made using MIT A
 5. Run the project: `npm run dev`  > **Note:** The URL server is `http://localhost:5173`
 6. **(Optional)** Building for Production: `npm run build`
 
-## APK Source Code
-[PlantCam Repository]()
+## APP LINKS
+
+[![Download APK](https://img.shields.io/badge/Download_APK-00C853?style=flat-square&logo=android&logoColor=white)](YOUR_DIRECT_DOWNLOAD_LINK_HERE)
+[![Source Code](https://img.shields.io/badge/Source_Code-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/lncekent/plantcam)
 
 ## Project Structure
 
