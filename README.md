@@ -29,7 +29,7 @@ This project will be showcasing the plantcam application that I made using MIT A
 
 ## APP LINKS
 
-[![Download APK](https://img.shields.io/badge/Download_APK-00C853?style=flat-square&logo=android&logoColor=white)](YOUR_DIRECT_DOWNLOAD_LINK_HERE)
+[![Download APK](https://img.shields.io/badge/Download_APK-00C853?style=flat-square&logo=android&logoColor=white)](https://github.com/lncekent/plantcam-promotional/releases/download/v1.0.0/PlantCam.apk)
 [![Source Code](https://img.shields.io/badge/Source_Code-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/lncekent/plantcam)
 
 ## Project Structure
