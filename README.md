@@ -2,7 +2,9 @@
 
 ![Home Page](https://res.cloudinary.com/dxatb3m2q/image/upload/q_auto,f_auto/v1779330124/Screenshot_2026-05-21_102053_zklxqr.png)
 
-This project will be showcasing the plantcam application that I made using MIT App Inventor and Webviewer for frontend. PlantCam is a mobile-based application for plant disease diagnosing, detection and smart recommendation using trained AI Model. By using Google Colab, trained AI with 18,000 images/datasets for solanaceous plants(potato, tomato and pepper).
+> A modern promotional website showcasing the **PlantCam** application, built using MIT App Inventor with a Webviewer frontend.
+
+PlantCam is a mobile-based application designed for **plant disease diagnosis, detection, and smart recommendation**. It utilizes a robust AI model trained via Google Colab with over 18,000 image datasets specifically for solanaceous plants (potato, tomato, and pepper).
 
 ## ✨ Features
 
