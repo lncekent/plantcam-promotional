@@ -32,7 +32,7 @@ PlantCam is a mobile-based application designed for **plant disease diagnosis, d
 
 ## 📲 APP LINKS
 
-[![Download APK](https://img.shields.io/badge/Download_APK-00C853?style=flat-square&logo=android&logoColor=white)](https://github.com/lncekent/plantcam-promotional/releases/download/v1.0.0/PlantCam.apk)
+[![Download APK](https://img.shields.io/badge/Download_APK-00C853?style=flat-square&logo=android&logoColor=white)](https://github.com/lncekent/plantcam/releases/download/v1.0.0/PlantCam.apk)
 [![Source Code](https://img.shields.io/badge/Source_Code-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/lncekent/plantcam)
 
 ## Project Structure
