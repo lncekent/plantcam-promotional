@@ -18,15 +18,14 @@ This project will be showcasing the plantcam application that I made using MIT A
 - **Design:** Google Stitch, Figma
 - **Tools:** Git, MCP
 
-## Installation & Setup 
+## Installation & Setup
 
 1. Open Terminal
 2. Clone the repository: `git clone [link]`
 3. Change directory to the project: `cd plantcam-promotional`
 4. Install dependencies: `npm install`
-5. Run the project: `npm run dev`  > **Note:** The URL server is `http://localhost:5173`
+5. Run the project: `npm run dev` > **Note:** The URL server is `http://localhost:5173`
 6. **(Optional)** Building for Production: `npm run build`
-
 
 ## Project Structure
 
@@ -36,3 +35,4 @@ src/
     components/     Reusable UI components
     pages/          Route pages
 public/             Public files such as PlantCam.apk
+```

@@ -27,8 +27,7 @@ const CTA = () => {
         </p>
         <div className="flex flex-col sm:flex-row gap-md justify-center relative z-10">
           <a
-            href="/PlantCam.apk"
-            download="PlantCam.apk"
+            href="https://github.com/lncekent/plantcam/releases/download/v1.0.0/PlantCam.apk"
             className="bg-on-primary text-primary px-xl py-md rounded-full font-label-lg text-label-lg flex items-center justify-center gap-sm hover:bg-white transition-all active:scale-95"
           >
             <span className="material-symbols-outlined">download</span>

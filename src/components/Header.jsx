@@ -73,8 +73,7 @@ const Header = () => {
           </Link>
         </nav>
         <a
-          href="/PlantCam.apk"
-          download="PlantCam.apk"
+          href="https://github.com/lncekent/plantcam/releases/download/v1.0.0/PlantCam.apk"
           className="bg-primary text-on-primary px-lg py-sm rounded-full font-label-lg text-label-lg active:scale-95 transition-transform hover:opacity-90"
         >
           Download APK

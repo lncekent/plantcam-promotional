@@ -31,14 +31,17 @@ const Hero = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-md justify-center md:justify-start">
             <a
-              href="/PlantCam.apk"
-              download="PlantCam.apk"
+              href="https://github.com/lncekent/plantcam/releases/download/v1.0.0/PlantCam.apk"
               className="bg-primary text-on-primary px-xl py-md rounded-full font-label-lg text-label-lg flex items-center justify-center gap-sm hover:shadow-lg transition-all active:scale-95"
             >
               <span className="material-symbols-outlined">android</span>
               Download Android APK
             </a>
-            <a target="_blank" href="https://res.cloudinary.com/dxatb3m2q/video/upload/q_auto,f_auto/v1779065318/plantcam-demo_rxyhfc.mp4" className="bg-surface-container-high text-primary px-xl py-md rounded-full font-label-lg text-label-lg flex items-center justify-center gap-sm hover:bg-surface-container-highest transition-all active:scale-95">
+            <a
+              target="_blank"
+              href="https://res.cloudinary.com/dxatb3m2q/video/upload/q_auto,f_auto/v1779065318/plantcam-demo_rxyhfc.mp4"
+              className="bg-surface-container-high text-primary px-xl py-md rounded-full font-label-lg text-label-lg flex items-center justify-center gap-sm hover:bg-surface-container-highest transition-all active:scale-95"
+            >
               <span className="material-symbols-outlined">play_circle</span>
               Watch Demo
             </a>
