@@ -20,21 +20,27 @@ PlantCam is a mobile-based application designed for **plant disease diagnosis, d
 - **Design:** Google Stitch, Figma
 - **Tools:** Git, MCP
 
-## Installation & Setup 
+## 🚀 Installation & Setup
 
 1. Open Terminal
 2. Clone the repository: `git clone [link]`
 3. Change directory to the project: `cd plantcam-promotional`
 4. Install dependencies: `npm install`
-5. Run the project: `npm run dev`  > **Note:** The URL server is `http://localhost:5173`
+5. Run the project: `npm run dev`
+   > 💡 **Note:** The URL server is `http://localhost:5173`
 6. **(Optional)** Building for Production: `npm run build`
 
+## 📲 APP LINKS
+
+[![Download APK](https://img.shields.io/badge/Download_APK-00C853?style=flat-square&logo=android&logoColor=white)](https://github.com/lncekent/plantcam/releases/download/v1.0.0/PlantCam.apk)
+[![Source Code](https://img.shields.io/badge/Source_Code-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/lncekent/plantcam)
 
 ## Project Structure
 
 ```text
-src/
-    assets/         Images and visual assets
-    components/     Reusable UI components
-    pages/          Route pages
-public/             Public files such as PlantCam.apk
+📦 src/
+ ┣ 📂 assets/         Images and visual assets
+ ┣ 📂 components/     Reusable UI components
+ ┗ 📂 pages/          Route pages
+📦 public/            Public files such as PlantCam.apk
+```
